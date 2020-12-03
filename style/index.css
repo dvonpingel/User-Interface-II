@@ -1,1 +1,164 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 /* Add CSS styling here */
+body{
+    font-size: 62.5%; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 2rem;
+    padding-top: 20px;
+    color: #0D7177;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+.navdiv {
+    margin-top: 15px;
+    border: 2px solid white;
+    width: 8%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93DADE;
+    cursor: pointer;
+    transition: .3s;
+}
+.navbar {
+    font-size: 1rem;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+header div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+header div h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #0D7177;
+    padding: 15px;
+    margin-top: 20px;
+}
+header div p {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    text-align: center;
+    font-size: 1rem;
+    color: #3FAFB6;
+}
+.topPic {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+.spanImage {
+    background-image: url(https://picsum.photos/1500/500);
+    background-repeat: no-repeat;
+    width: 1500px;
+    height: 500px;
+}
+.footydad {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+.footy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    flex-wrap: wrap;
+}
+.left {
+    background-image: url(https://picsum.photos/250/500);
+    width: 200px;
+    height: 400px;
+}
+.para {
+    font-size: 1rem;
+    width: 20%;
+    text-align: center;
+    color: #0D7177;
+}
+.truefooty {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    bottom: 0%;
+    position: fixed;
+    align-items: center;
+    padding-bottom: 10px;
+    background-color: #E3DBCC;
+}
+.truefooty nav div a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.navdiv:hover {
+    background-color: white;
+}
+.navbar a:hover {
+    color: #0D7177;
+}
