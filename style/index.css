@@ -19,68 +19,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 
 /* Add CSS styling here */
 body{
     font-size: 62.5%; 
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 h1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
     font-size: 2rem;
-    padding-top: 20px;
     color: #0D7177;
 }
 section {
     display: flex;
-    justify-content: center;
-}
-.navdiv {
-    margin-top: 15px;
-    border: 2px solid white;
-    width: 8%;
-    height: 50px;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #93DADE;
-    cursor: pointer;
-    transition: .3s;
+    margin-top: 20px;
 }
-.navbar {
-    font-size: 1rem;
+/*navigation items*/
+nav {
+    padding: 1% 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
 }
-.navbar a {
+nav a {
+    display: inline-block;
+    padding: 1% 0;
+    width: 10%;
+    text-align: center;
+    font-size: 1.2rem;
     text-decoration: none;
     color: white;
-    transition: .3s;
+    background-color: #51c3c9;
+    border-radius: 5px;
 }
+/*HEADER ITEMS*/
 header div {
     display: flex;
     justify-content: center;
@@ -93,27 +69,24 @@ header div h2 {
     font-size: 2rem;
     color: #0D7177;
     padding: 15px;
-    margin-top: 20px;
 }
 header div p {
     display: flex;
     justify-content: center;
-    width: 1000px;
+    width: 60%;
     text-align: center;
     font-size: 1rem;
-    color: #3FAFB6;
+    color: hsl(184, 49%, 48%);
 }
 .topPic {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     padding: 25px 0;
 }
 .spanImage {
-    background-image: url(https://picsum.photos/1500/500);
+    background-image: url('assets/bard.jpg');
     background-repeat: no-repeat;
-    width: 1500px;
-    height: 500px;
+    background-position: top;
+    background-size: cover;
+    height: 40vh;
 }
 .footydad {
     display: flex;
@@ -121,6 +94,7 @@ header div p {
     height: 400px;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 .footy {
     display: flex;
@@ -146,7 +120,7 @@ header div p {
     width: 100%;
     display: flex;
     bottom: 0%;
-    position: fixed;
+    margin-top: 4%;
     align-items: center;
     padding-bottom: 10px;
     background-color: #E3DBCC;
@@ -161,4 +135,10 @@ header div p {
 }
 .navbar a:hover {
     color: #0D7177;
+}
+/*adjust for mobile*/
+@media (max-width: 800px) {
+    .footydad {
+        
+    }
 }
