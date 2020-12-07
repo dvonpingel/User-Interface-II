@@ -1,1 +1,170 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 /* Add CSS styling here */
+body{
+    font-size: 62.5%; 
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+h1 {
+    font-size: 2rem;
+    color: #0D7177;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/*navigation items*/
+nav {
+    padding: 2% 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    display: inline-block;
+    padding: 1% 0;
+    width: 10%;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    background-color: #51c3c9;
+    border-radius: 5px;
+    transition: .3s;
+}
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+/*HEADER ITEMS*/
+header div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+header div h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #0D7177;
+    padding: 15px;
+}
+header div p {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(184, 49%, 48%);
+}
+/*picture stying and bottom content*/
+.topPic {
+    background-image: url(https://wallpapercave.com/wp/wp2454159.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 40vh;
+}
+.lowercontent {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0;
+    flex-wrap: wrap;
+}
+.footy img {
+    width: 200px;
+}
+.para {
+    font-size: 1rem;
+    width: 20%;
+    text-align: center;
+    color: #0D7177;
+}
+/*true footer content*/
+footer {
+    height: 10vh;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #E3DBCC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav a:hover {
+    background-color: grey;
+}
+/*adjust for mobile*/
+@media (max-width: 800px) {
+    nav a {
+        width: 15%;
+    }
+    .footy img {
+        width: 150px;
+    }
+}
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav a {
+        width: 50%;
+        margin: 1% 0;
+    }
+    header div p {
+        font-size: .8rem;
+        width: 80%;
+    }
+    .footy img{
+        width: 225px;
+        padding-top: 4%;
+    }
+    .para {
+        width: 50%;
+        padding: 4% 0 2% 0;
+    }
+    footer nav {
+        padding-top: 4%;
+    }
+}
